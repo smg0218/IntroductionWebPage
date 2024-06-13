@@ -1,0 +1,15 @@
+footer {
+    height: 110px; /* 내용물에 따라 알맞는 값 설정 */
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: lightblue;
+    background: #939393;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
