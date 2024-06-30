@@ -1,4 +1,4 @@
-package com.spring.repository;
+package com.spring.api.techstack.repository;
 
 import com.spring.entity.TechStack;
 import org.springframework.data.jpa.repository.JpaRepository;

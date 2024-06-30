@@ -1,9 +1,6 @@
 package com.spring.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -11,12 +8,13 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 
 @Entity
 public class TechStack {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "tech_id",nullable = false)
+    @Column(name = "tech_id")
     private Long techId;
 
     // 기술 이름
@@ -25,6 +23,5 @@ public class TechStack {
 
     // 기술 설명, 필요할 경우에 넣기
     @Column(name = "tech_info", columnDefinition = "TEXT")
-    @Builder.Default
-    private String techInfo = null;
+    private String techInfo;
 }

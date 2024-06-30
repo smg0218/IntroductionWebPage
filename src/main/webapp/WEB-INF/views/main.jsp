@@ -37,10 +37,16 @@
                 <span>정보처리산업기사</span>
             </div>
         </div>
+        <hr />
         <h2>진행한 프로젝트</h2>
         <div id="project-list">
             <div class="project">
                 <span>KITPA(한국정보기술진흥원) 2회 대회 시스템 개발</span>
+                <span>2024.01.21 ~ 2024.03.16</span>
+            </div>
+            <div class="project">
+                <span>나의 소개 웹페이지</span>
+                <span>2024.06.18 ~ now</span>
             </div>
         </div>
     </div>
