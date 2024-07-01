@@ -69,20 +69,21 @@
 
     //fetch 내용에 따라 출력처리
     function fetchInfo(info, fetchName) {
-        const {error, fetchName} = info
+        const {error} = info
         if (error) {
             alert(error.toString())
             location.href = "/";
         }
 
-        fetchName.forEach(fetch => {
-            // fetch 내용이 techStack일 경우
-            if(fetchName === "techStack") {
-                console.log(`techId : \${fetch.techId}`);
-                console.log(`techName : \${fetch.techName}`);
-                console.log(`techInfo : \${fetch.techInfo}`);
-            }
-        })
+        // fetch 내용이 techStack일 경우
+        if(fetchName === "techStack") {
+            const {techStacks} = info
+            techStacks.forEach(tech => {
+                console.log(`techId : \${tech.techId}`);
+                console.log(`techName : \${tech.techName}`);
+                console.log(`techInfo : \${tech.techInfo}`);
+            })
+        }
     }
 
     fetchGetTechStackInfo();

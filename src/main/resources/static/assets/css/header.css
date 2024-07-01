@@ -1,0 +1,20 @@
+header {
+    height: 8vh; /* 내용물에 따라 알맞는 값 설정 */
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    background: lightblue;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left-header {
+    margin-left: 3vh;
+}
+
+#right-header {
+    margin-right: 3vh;
+}
